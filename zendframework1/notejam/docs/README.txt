@@ -1,7 +1,7 @@
 README
 ======
 
-This directory should be used to place project specfic documentation including
+This directory is used to place project specific documentation including
 but not limited to project notes, generated API/phpdoc documentation, or
 manual files generated or hand written.  Ideally, this directory would remain
 in your development environment only and should not be deployed with your
@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "/home/kapilsharma/dev/github/quickstart/public"
+   DocumentRoot "/home/kapilsharma/dev/github/notejam/zendframework/notejam/public"
    ServerName quickstart.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "/home/kapilsharma/dev/github/quickstart/public">
+   <Directory "/home/kapilsharma/dev/github/notejam/zendframework/notejam/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
