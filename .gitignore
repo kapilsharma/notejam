@@ -51,3 +51,6 @@ bower_components
 
 #.phar archives
 *.phar
+
+#Zend Framework
+zendframework1/notejam/library/Zend/
