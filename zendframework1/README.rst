@@ -39,6 +39,8 @@ Launch
 
 Setup apache/nginx with proper virtual host. Make sure mod_rewrite is enabled for apache. Sample `.htaccess` file is given for apache. We are assuming you set host to `zf1.notejam.dev`. Change URLs accordingly if your virtual host is different.
 
+For more detailed documents, please refer `notejam/zendframework1/notejam/docs` folder.
+
 ---------
 Run tests
 ---------
