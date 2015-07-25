@@ -56,3 +56,5 @@ bower_components
 zendframework1/notejam/library/Zend/
 # PHP Storm
 .idea/
+# local database
+zendframework1/notejam/data/db/notejam-development.db
