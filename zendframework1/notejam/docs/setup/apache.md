@@ -31,29 +31,29 @@ sudo cp 000-default.conf zf1.notejam.dev.conf
 
 - Edit zf1.notejam.dev.conf to look as follow
 
-``` xml
-<VirtualHost *:80>
-    ServerAdmin kapshainfo@gmail.com
-    ServerName zf1.notejam.dev
-    DocumentRoot /home/kapilsharma/dev/github/notejam/zendframework1/notejam/public
-
-    <Directory /home/kapilsharma/dev/github/notejam/zendframework1/notejam/public/>
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Require all granted
-    </Directory>
+```
+    <VirtualHost *:80>
+        ServerAdmin kapshainfo@gmail.com
+        ServerName zf1.notejam.dev
+        DocumentRoot /home/kapilsharma/dev/github/notejam/zendframework1/notejam/public
     
-    ErrorLog ${APACHE_LOG_DIR}/zf1.notejam.error.log
-    CustomLog ${APACHE_LOG_DIR}/zf1.notejam.access.log combined
-
-</VirtualHost>
+        <Directory /home/kapilsharma/dev/github/notejam/zendframework1/notejam/public/>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+    
+        ErrorLog ${APACHE_LOG_DIR}/zf1.notejam.error.log
+        CustomLog ${APACHE_LOG_DIR}/zf1.notejam.access.log combined
+    
+    </VirtualHost>
 ```
 
 WARNING: Please update paths as per your system. 
 
 - Enable new site, reload and restart apache
 
-``` bash
+```bash
 sudo a2ensite zf1.notejam.dev.conf
 sudo service apache2 reload
 sudo service apache2 restart
